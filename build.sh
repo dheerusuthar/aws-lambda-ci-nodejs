@@ -20,7 +20,7 @@ for d in ./*; do
     npm run build;
     # npm run win-zip;
     npm run zip;
-    cp ./dist/${BASENAME}.zip "${curr_dir}/src/${d%}.zip";
+    cp ./dist/${BASENAME}.zip "${curr_dir}/src/${BASENAME}.zip";
     cd ..;
 done
 
