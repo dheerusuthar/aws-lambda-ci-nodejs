@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ========================================== Start Build ================================================
-# set -e
+set -e
 # set -x
 rm -rf src eslint-result.xml;
 mkdir src; 

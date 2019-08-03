@@ -1,14 +1,10 @@
+before_script: 
+  - npm install -g eslint
 language: node_js
 node_js: 
   - "stable"
-cache:
-  directories:
-    - "node_modules"
-before_script: 
-  - cd lambda-functions
-  - npm install -g eslint
 scripts: 
-  - eslint --config=../.eslintrc */*/index.js --fix > ../eslint-result.xml
+  - ./build.sh
 
 # safelist
 branches:
