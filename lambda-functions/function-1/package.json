@@ -1,0 +1,32 @@
+{
+  "name": "box-service",
+  "description": "A Lambda function for box microservice",
+  "main": "index.js",
+  "author": {
+    "name": "box-service"
+  },
+  "private": true,
+  "version": "0.0.1",
+  "dependencies": {
+    "axios": "^0.19.0"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "sinon": "*",
+    "sinon-chai": "*",
+    "mocha": "*",
+    "npm-run-all": "*",
+    "proxyquire": "*",
+    "eslint": "^6.1.0",
+  },
+  "scripts": {
+    "pretest": "npm install",
+    "test": "env ENV='dev' mocha tests/*.spec.js",
+    "build-init": "rm -rf dist && rm -f archive.zip && mkdir dist",
+    "build:copy": "cp index.js dist/",
+    "build:install": "cp package.json dist/ && cd dist && npm install --production",
+    "build": "npm-run-all -s build-init build:copy build:install",
+    "zip": "cd dist && zip -rq box-service.zip .",
+    "win-zip": "cd dist && 7z a box-service.zip ."
+  }
+}
