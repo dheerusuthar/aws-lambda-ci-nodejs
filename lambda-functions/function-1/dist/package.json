@@ -26,7 +26,7 @@
     "build:copy": "cp index.js dist/",
     "build:install": "cp package.json dist/ && cd dist && npm install --production",
     "build": "npm-run-all -s build-init build:copy build:install",
-    "zip": "cd dist && zip -r package.zip .",
-    "win-zip": "cd dist && 7z a package.zip ."
+    "zip": "cd dist && zip -r .",
+    "win-zip": "cd dist && 7z a function-1.zip ."
   }
 }
