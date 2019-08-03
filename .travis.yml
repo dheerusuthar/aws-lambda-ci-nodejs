@@ -1,8 +1,9 @@
 language: node_js
+
 node_js: 
-  - "stable"
-scripts: 
-  - ./build.sh
+  - "8.10"
+
+script: ./build.sh
 
 # safelist
 branches:
