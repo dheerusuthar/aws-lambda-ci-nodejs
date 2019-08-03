@@ -1,0 +1,15 @@
+
+E:\ProjectsV2\aws-lambda-jenkins-ci-nodejs\lambda-functions\function-1\dist\index.js
+  1:1   error  Rule 'no-empty-class' was removed and replaced by: no-empty-character-class                                                   no-empty-class
+  1:1   error  Rule 'no-reserved-keys' was removed and replaced by: quote-props                                                              no-reserved-keys
+  1:1   error  Rule 'no-empty-label' was removed and replaced by: no-labels                                                                  no-empty-label
+  1:1   error  Rule 'no-wrap-func' was removed and replaced by: no-extra-parens                                                              no-wrap-func
+  1:1   error  Rule 'space-after-keywords' was removed and replaced by: keyword-spacing                                                      space-after-keywords
+  1:1   error  Rule 'space-in-brackets' was removed and replaced by: object-curly-spacing, array-bracket-spacing, computed-property-spacing  space-in-brackets
+  1:1   error  Rule 'space-return-throw-case' was removed and replaced by: keyword-spacing                                                   space-return-throw-case
+  1:1   error  Rule 'spaced-line-comment' was removed and replaced by: spaced-comment                                                        spaced-line-comment
+  3:7   error  'axios' is assigned a value but never used                                                                                    no-unused-vars
+  5:19  error  Expected to return a value at the end of function                                                                             consistent-return
+
+✖ 10 problems (10 errors, 0 warnings)
+

@@ -1,3 +1,4 @@
+
 'use strict';
 
 var expect = require('chai').expect;
@@ -5,17 +6,12 @@ var expect = require('chai').expect;
 var lambdaFunc = require('../index');
 
 describe('lambdaFunc', function () {
-
     [
         "AWS",
         "Lambda"
-
     ].forEach(function (validName) {
-
         it(`successful invocation: name=${validName}`, function (done) {
-
             var context = {
-
                 succeed: function (result) {
 
                     expect(result.valid).to.be.true;
@@ -28,7 +24,7 @@ describe('lambdaFunc', function () {
                 }
             }
 
-            myLambda.handler({ name: validName }, { /* context */ }, (err, result) => {
+            lambdaFunc.handler({ name: validName }, { /* context */ }, (err, result) => {
 
                 try {
 
@@ -48,19 +44,19 @@ describe('lambdaFunc', function () {
     });
 
     [
-        "Other",
+        "Fred",
         undefined
 
     ].forEach(function (invalidName) {
 
         it(`fail: when name is invalid: name=${invalidName}`, function (done) {
 
-            myLambda.handler({ name: invalidName }, { /* context */ }, (err, result) => {
+            lambdaFunc.handler({ name: invalidName }, { /* context */ }, (err, result) => {
 
                 try {
 
                     expect(err).to.exist;
-                    expect(err.message).to.equal('Unknow Name');
+                    expect(err.message).to.equal('unknown name');
 
                     expect(result).to.not.exist;
 

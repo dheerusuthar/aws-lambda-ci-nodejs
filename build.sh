@@ -1,14 +1,14 @@
 #!/bin/bash
 echo ========================================== Start Build ================================================
 set -e
-# set -x
+set -x
 rm -rf src eslint-result.xml;
 mkdir src; 
 curr_dir=$(pwd);
 cd lambda-functions;
 
 npm install -g eslint;
-eslint --config=../.eslintrc */*/index.js --fix > ../eslint-result.xml || echo linting failed. continuing with build process;
+eslint --config=../.eslintrc */*/index.js --fix > ../eslint-result.xml;
 
 for d in ./*; do
     cd ${d};
