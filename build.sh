@@ -18,8 +18,11 @@ for d in ./*; do
     npm install;
     npm test;
     npm run build;
-    # npm run win-zip;
-    npm run zip;
+    if [ `uname` == "MINGW64_NT-10.0" ]; then
+        npm run win-zip;
+    else
+        npm run zip;
+    fi 
     cp ./dist/package.zip "${curr_dir}/src/${BASENAME}.zip";
     cd ..;
 done

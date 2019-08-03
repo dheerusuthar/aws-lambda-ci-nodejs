@@ -1,9 +1,9 @@
 {
-  "name": "box-service",
-  "description": "A Lambda function for box microservice",
+  "name": "function-1",
+  "description": "A Lambda function for function-1 microservice",
   "main": "index.js",
   "author": {
-    "name": "box-service"
+    "name": "function-1"
   },
   "private": true,
   "version": "0.0.1",
