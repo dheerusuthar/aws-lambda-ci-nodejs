@@ -7,7 +7,7 @@ mkdir src;
 curr_dir=$(pwd);
 cd lambda-functions;
 
-# npm install -g eslint;
+npm install -g eslint;
 eslint --config=../.eslintrc */*/index.js --fix > ../eslint-result.xml || echo linting failed. continuing with build process;
 
 for d in ./*; do

@@ -17,7 +17,7 @@
     "mocha": "*",
     "npm-run-all": "*",
     "proxyquire": "*",
-    "eslint": "^6.1.0",
+    "eslint": "^6.1.0"
   },
   "scripts": {
     "pretest": "npm install",
