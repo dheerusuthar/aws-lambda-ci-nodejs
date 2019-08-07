@@ -30,11 +30,11 @@ Your Name – [@Twitter](https://twitter.com/AnotherMarwari) – dheerusuthar@gm
 
 Distributed under the GNU license. See ``LICENSE`` for more information.
 
-[https://github.com/dheerusuthar/aws-lambda-jenkins-ci-nodejs](https://github.com/dheerusuthar/)
+[https://github.com/dheerusuthar/aws-lambda-ci-nodejs](https://github.com/dheerusuthar/)
 
 ## Contributing
 
-1. Fork it (<https://github.com/dheerusuthar/aws-lambda-jenkins-ci-nodejs/fork>)
+1. Fork it (<https://github.com/dheerusuthar/aws-lambda-ci-nodejs/fork>)
 2. Create your feature branch (`git checkout -b feature/feature001`)
 3. Commit your changes (`git commit -am 'Add some feature001'`)
 4. Push to the branch (`git push origin feature/feature001`)
