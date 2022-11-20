@@ -26,11 +26,11 @@ Setup CI/CD ( jenkins, Travis, CircleCi etc ) repo and set build script to `buil
 
 ## Meta
 
-Your Name – [@Twitter](https://twitter.com/AnotherMarwari) – dheerusuthar@gmail.com
+Your Name – [@Twitter](https://twitter.com/dheeru237)
 
 Distributed under the GNU license. See ``LICENSE`` for more information.
 
-[https://github.com/dheerusuthar/aws-lambda-ci-nodejs](https://github.com/dheerusuthar/)
+[https://github.com/dheeraj237/aws-lambda-ci-nodejs](https://github.com/dheeraj237/)
 
 ## Contributing
 
